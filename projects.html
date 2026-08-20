@@ -1,0 +1,64 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Lingkai Zhang 个人科研主页，多无人机、机器人、多智能体系统、规划与控制。">
+<title>项目 | Lingkai Zhang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header><div class="container nav">
+<a class="brand" href="index.html">Lingkai <b>Zhang</b></a>
+<nav id="nav"><a class="" href="index.html">首页</a><a class="active" href="projects.html">项目</a><a class="" href="publications.html">论文</a><a class="" href="profile.html">经历与关于</a><a class="cv-link" href="files/Lingkai_Zhang_CV.pdf" target="_blank">CV</a></nav>
+<button class="menu" id="menu" aria-label="menu">☰</button>
+</div></header>
+<main>
+<section class="page-head"><div class="container"><div class="eyebrow">Research & Engineering</div><h1>项目</h1><p>以“做了什么、用了什么、结果是什么”为主。素材较完整的项目展示视频或图片，其余项目保持文字化，不使用空白占位图。</p></div></section>
+<section class="section"><div class="container"><div class="project-list">
+
+<article class="project-row"><div class="media"><video controls preload="metadata" poster="assets/images/ltsfc-mixed-poster.jpg"><source src="assets/videos/ltsfc-mixed-reality.mp4" type="video/mp4"></video></div>
+<div class="project-copy"><div class="label">Multi-UAV Formation Control</div><h2>Lead-Time Synchronized Formation Control for Multi-UAV Systems</h2>
+<p>面向复合扰动下多无人机编队同步收敛问题，设计 LTSTDO disturbance observer 与 LTSFC formation controller，完成 Lyapunov 稳定性证明和收敛时间推导。</p>
+<ul><li>MATLAB 数值仿真与对比实验</li><li>ROS / Gazebo / PX4 / Intel NUC mixed-reality HIL 平台</li><li>真实多无人机编队飞行与实验数据分析</li></ul>
+<div class="media-pair"><img src="assets/images/ltsfc-total-thrust.png" alt="Total thrust result"><div class="result-strip"><strong>Publication</strong><br>ISA Transactions · Minor Revision · SCI Q1 · 第三作者</div></div>
+</div></article>
+
+<article class="project-row"><div class="media"><video controls preload="metadata" poster="assets/images/robocup-flight.jpg"><source src="assets/videos/robocup-demo.mp4" type="video/mp4"></video></div>
+<div class="project-copy"><div class="label">RoboCup China UAV Challenge</div><h2>Dual-UAV Cooperative Transport</h2>
+<p>面向 GPS-denied 室内环境开发双无人机协同运输系统，实现自主起飞、协同导航、避障、运输与精准投送。</p>
+<ul><li>FAST-LIO2 + Livox Mid-360 + IMU 状态估计</li><li>Jetson Orin NX 部署</li><li>改进人工势场协同避障</li><li>ROS / PX4 Offboard 系统集成与真机调试</li></ul>
+<div class="media-pair"><img src="assets/images/robocup-flight.jpg" alt="RoboCup flight"><img src="assets/images/robocup-trophy.jpg" alt="RoboCup runner-up trophy"></div>
+<div class="result-strip"><strong>Result:</strong> 2025 RoboCup China UAV Challenge · 全国二等奖（亚军）</div>
+</div></article>
+
+<article class="project-row"><div class="media"><video controls preload="metadata" poster="assets/images/econtest-platform.jpg"><source src="assets/videos/econtest-demo.mp4" type="video/mp4"></video></div>
+<div class="project-copy"><div class="label">National Undergraduate Electronic Design Contest</div><h2>Aerial-Ground Cooperative Search System</h2>
+<p>空地协同搜索项目，围绕无人机自主巡航、目标搜索、任务状态机、ROS / PX4 / MAVROS 系统集成与真实平台调试展开。</p>
+<ul><li>负责总体技术方案与 ROS 侧软件开发</li><li>任务状态机、多节点接口与系统集成</li><li>真实飞行测试、参数调优与异常排查</li></ul>
+<div class="result-strip"><strong>Result:</strong> 2025 全国大学生电子设计竞赛 · 省级二等奖</div>
+</div></article>
+
+<article class="project-row no-media"><div class="project-copy"><div class="label">Path Planning</div><h2>Provincial Key STITP — Hierarchical UAV Path Planning</h2>
+<p>构建 Bi-RRT 全局路径规划 + EgoPlanner 局部轨迹优化的层级无人机规划系统，并在 ROS / Gazebo 中验证、完成 PX4 真机部署；后续研究拓展至低空空域资源的时空分配与协同优化。</p>
+<div class="tags"><span>Bi-RRT</span><span>EgoPlanner</span><span>ROS</span><span>PX4</span></div></div></article>
+
+<article class="project-row no-media"><div class="project-copy"><div class="label">Deep Learning</div><h2>RIS-CENet: Module-Aware Deep Learning for Cascaded Channel Estimation</h2>
+<p>面向 RIS-assisted communications 的级联信道估计问题，构建 module-aware deep learning framework，完成数据集构建、网络设计、训练、超参数搜索与消融实验。</p>
+<div class="tags"><span>PyTorch</span><span>Deep Learning</span><span>RIS</span></div></div></article>
+
+<article class="project-row no-media"><div class="project-copy"><div class="label">Optimization</div><h2>Swarm Intelligence-Based UAV Ferry Cruising Optimization</h2>
+<p>针对灾后应急通信中的 ferry UAV，建立空天地通信与时延模型，优化 relay node visiting sequence 与 3D hovering position，并完成 MATLAB 对比实验。</p>
+<div class="tags"><span>UAV Swarm</span><span>Optimization</span><span>MATLAB</span></div>
+<div class="result-strip">论文已发表于 <em>Radio Communications Technology</em>（北大核心期刊）。</div></div></article>
+
+<article class="project-row"><div class="media"><video controls preload="metadata" poster="assets/images/dev-video-poster.jpg"><source src="assets/videos/daily-development.mp4" type="video/mp4"></video></div>
+<div class="project-copy"><div class="label">Engineering Practice</div><h2>日常无人机开发与调试</h2>
+<p>用于补充展示实际工程能力，包括无人机平台搭建、ROS / PX4 调试、传感器接入、飞控联调与现场测试。这里不单独拆成项目，只作为工程实践记录。</p>
+<div class="tags"><span>ROS</span><span>PX4</span><span>Linux</span><span>Real-World Deployment</span></div></div></article>
+
+</div></div></section>
+</main><footer><div class="container footer">
+<span>© <span id="year"></span> Lingkai Zhang</span>
+<span>Multi-UAV · Robotics · Multi-Agent Systems</span>
+</div></footer><script src="script.js"></script></body></html>
